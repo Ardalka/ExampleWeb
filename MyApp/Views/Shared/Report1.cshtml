@@ -1,0 +1,10 @@
+﻿
+@{
+    Html.DevExpress().GridView(settings =>
+    {
+        settings.name  = "ReportGrid";
+        settings.CallbackRouteValues  =  new { Controller = "Home", Action = "GridViewPartial1" };}
+    }).Bind(Model).GetHtml()
+}
+
+    
